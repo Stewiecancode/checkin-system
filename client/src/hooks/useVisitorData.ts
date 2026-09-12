@@ -55,16 +55,20 @@ export function useVisitorData() {
   }, []);
 
   const checkOut = useCallback((recordId: string) => {
+    const active = store.records.find((record) => record.id === recordId && record.status === "CHECKED_IN");
+    if (!active) return null;
     const checkOutTime = new Date().toISOString();
+    const checkedOut: CheckInRecord = { ...active, checkOutTime, status: "CHECKED_OUT" };
     setStore((current) => ({
       ...current,
       records: current.records.map((record) =>
-        record.id === recordId
+        record.id === recordId && record.status === "CHECKED_IN"
           ? { ...record, checkOutTime, status: "CHECKED_OUT" }
           : record,
       ),
     }));
-  }, []);
+    return checkedOut;
+  }, [store.records]);
 
   const currentRecords = useMemo(
     () => store.records.filter((record) => record.status === "CHECKED_IN"),

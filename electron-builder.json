@@ -1,0 +1,22 @@
+{
+  "appId": "com.visitorflow.kiosk",
+  "productName": "MDIHUB",
+  "directories": { "app": "dist/desktop", "output": "release" },
+  "files": ["main.cjs", "icon.ico", "package.json", "public/**/*"],
+  "asar": true,
+  "beforeBuild": "scripts/before-desktop-build.cjs",
+  "win": {
+    "icon": "desktop/icon.ico",
+    "target": [{ "target": "nsis", "arch": ["x64"] }],
+    "artifactName": "MDIHUB-Setup-${version}-${arch}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "deleteAppDataOnUninstall": false
+  }
+}
