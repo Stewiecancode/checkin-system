@@ -6,7 +6,7 @@ await copyFile(new URL("../desktop/main.cjs", import.meta.url), new URL("main.cj
 await copyFile(new URL("../desktop/icon.ico", import.meta.url), new URL("icon.ico", output));
 await writeFile(new URL("package.json", output), JSON.stringify({
   name: metadata.name,
-  productName: "MDIHUB",
+  productName: "Selemela Software Solutions",
   version: metadata.version,
   description: metadata.description,
   license: metadata.license,

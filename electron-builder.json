@@ -1,6 +1,6 @@
 {
   "appId": "com.visitorflow.kiosk",
-  "productName": "MDIHUB",
+  "productName": "Selemela Software Solutions",
   "directories": { "app": "dist/desktop", "output": "release" },
   "files": ["main.cjs", "icon.ico", "package.json", "public/**/*"],
   "asar": true,
@@ -8,7 +8,7 @@
   "win": {
     "icon": "desktop/icon.ico",
     "target": [{ "target": "nsis", "arch": ["x64"] }],
-    "artifactName": "MDIHUB-Setup-${version}-${arch}.${ext}"
+    "artifactName": "Selemela-Setup-${version}-${arch}.${ext}"
   },
   "nsis": {
     "oneClick": false,

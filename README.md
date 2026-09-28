@@ -1,18 +1,18 @@
-# MDIHUB
+# Selemela Software Solutions
 
-Branding uses the supplied MDIHUB logo with a white background, saved at `client/src/assets/mdihub-logo.png`. The background was edited with the built-in image tool using: “Replace the grey background with pure white; preserve the gold network, MDiHub lettering and Mafikeng Digital Innovation Hub subtitle.”
+Branding uses the supplied Selemela Software Solutions logo with a white background, saved at `client/src/assets/selemela-logo.png`. The background was edited with the built-in image tool using: “Replace the grey background with pure white; preserve the gold network, MDiHub lettering and Mafikeng Digital Innovation Hub subtitle.”
 
-The legacy storage key, Windows application ID, and `%APPDATA%\VisitorFlow` profile directory are retained so existing test data survives this branding update. The displayed application and installer names are MDIHUB.
+The legacy storage key, Windows application ID, and `%APPDATA%\VisitorFlow` profile directory are retained so existing test data survives this branding update. The displayed application and installer names are Selemela Software Solutions.
 
 A visitor check-in kiosk built with React, TypeScript and Vite, with an Electron desktop app for Windows. Visitors can register with an ID or passport, check in, and be checked out by an administrator. The admin area includes occupancy, visit history, filters and a visitor directory.
 
 ## Install the Windows app
 
-After building, open `release/MDIHUB-Setup-1.0.0-x64.exe`, follow the installer, and launch **MDIHUB** from the desktop or Start menu. The installer is for 64-bit Windows 10/11 and installs for your Windows account without requiring administrator access. Node.js is not needed on a PC running the installed app.
+After building, open `release/Selemela-Setup-1.0.0-x64.exe`, follow the installer, and launch **Selemela Software Solutions** from the desktop or Start menu. The installer is for 64-bit Windows 10/11 and installs for your Windows account without requiring administrator access. Node.js is not needed on a PC running the installed app.
 
 This is an unsigned local test build. Windows may show an unknown-publisher/SmartScreen prompt; only proceed if you trust the installer you built from this project.
 
-Uninstall through Windows **Settings > Apps > Installed apps > MDIHUB**. Visitor data is retained when uninstalling.
+Uninstall through Windows **Settings > Apps > Installed apps > Selemela Software Solutions**. Visitor data is retained when uninstalling.
 
 ## Run from source
 
@@ -68,7 +68,7 @@ Use fictional details for testing. The demo admin login is:
 4. Open **Admin login** and sign in. Check that the visitor appears in **Currently checked in**, then select **Check out**.
 5. Open **Check-in history** and search for that visitor. Confirm the checked-out status and departure time. Try the status, identification type and Today filters.
 6. Sign out, look up the same passport, and check in using the existing profile. Registration should not be required again.
-7. Close and reopen MDIHUB. Log in again and confirm the profile and visit records remain.
+7. Close and reopen Selemela Software Solutions. Log in again and confirm the profile and visit records remain.
 
 For an existing sample profile, passport `PZ4829106` belongs to Daniel van Wyk and starts checked out.
 
