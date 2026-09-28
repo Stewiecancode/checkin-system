@@ -60,7 +60,7 @@ The production web server defaults to port 3000. To change it in PowerShell, run
 Use fictional details for testing. The demo admin login is:
 
 - Username: `admin`
-- Password: `admin123`
+- Password: `admin`
 
 1. Launch the app. Four sample visitors appear on first use; Alice starts checked in.
 2. Choose **Check in with Passport**, enter a new number such as `TEST12345`, and continue. Fill in the registration details and submit. Confirm the arrival success screen appears.

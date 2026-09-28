@@ -14,7 +14,7 @@ async function createWindow() {
     minHeight: 600,
     title: "Selemela Software Solutions",
     icon: path.join(__dirname, "icon.ico"),
-    backgroundColor: "#f8f6f0",
+    backgroundColor: "#f7f9ff",
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,

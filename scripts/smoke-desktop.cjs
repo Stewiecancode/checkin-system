@@ -66,7 +66,7 @@ app.whenReady().then(async () => {
   await fill('input[placeholder="Enter password"]', 'wrong');
   await click("Sign in");
   assert.ok(await run("document.querySelector('.form-error') !== null"));
-  await fill('input[placeholder="Enter password"]', 'admin123');
+  await fill('input[placeholder="Enter password"]', 'admin');
   await click("Sign in");
   await click("Currently checked in");
   await run(`(() => {

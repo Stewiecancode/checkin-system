@@ -32,7 +32,7 @@ export interface CheckInSuccess {
 
 export const ADMIN_CREDENTIALS = {
   username: "admin",
-  password: "admin123",
+  password: "admin",
 };
 
 export function formatDateTime(value: string) {
